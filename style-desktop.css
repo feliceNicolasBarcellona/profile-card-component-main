@@ -1,0 +1,120 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --ver-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+  --default-font: 'Kumbh Sans', sans-serif;
+  --body-font-size: 18px;
+  --font-weight-400: 400;
+  --font-weight-700: 700;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: var(--body-font-size);
+  font-family: var(--default-font);
+}
+
+body {
+  background-color: var(--dark-cyan); 
+  background-image:url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat;
+  background-position:top -35.5556rem left -16.6667rem, right -13.8889rem bottom -41.6667rem;
+  height: 100vh;
+  background-size: 69.4444rem;
+}
+
+main {
+  height: 98vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.card {
+  height: 374px;
+  width: 350px;
+  background-color: hsl(360, 100%, 100%);
+  border-radius: 0.8333rem;
+}
+
+.pattern-card{
+  background-image: url("images/bg-pattern-card.svg");
+  width: 100%;
+  height: 7.7778rem;
+  border-radius: 0.8333rem 0.8333rem 0 0;
+}
+
+.image-victor {
+  background-image: url("images/image-victor.jpg");
+  background-repeat: no-repeat;
+  height: 5.8889rem;
+  width: 5.8889rem;
+  border: 0.2778rem solid hsl(360, 100%, 100%);
+  position: relative;
+  bottom: 16rem;
+  left: 6.7778rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.avatar-description {
+  border-bottom: 0.0556rem solid hsla(227, 10%, 46%, 0.2);
+  text-align: center;
+}
+
+.name {
+  font-weight: 700;
+  color: var(--ver-dark-desaturated-blue);
+  margin-bottom: 0.6111rem;
+  margin-top: 4.1111rem;
+}
+
+.age {
+  font-weight: 500;
+  color: var(--dark-gray);
+  margin-left: 0.4444rem;
+}
+
+.city {
+  font-size: 0.8333rem; 
+  color: var(--dark-grayish-blue);
+  margin-bottom: 1.4444rem;
+}
+
+.stats-container {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.stats {
+  font-weight: 700;
+  margin-bottom: 0.4444rem;
+}
+
+.stats-description {
+  font-weight: 500;
+  font-size: 0.5rem;
+  letter-spacing: 0.1111rem;
+  color: var(--dark-grayish-blue);
+}
+
+.attribution { 
+  font-size: 0.6111rem; 
+  text-align: center;
+  font-family: var(--default-font); 
+}
+
+.attribution a { 
+  color: hsl(360, 100%, 100%); 
+}
+
