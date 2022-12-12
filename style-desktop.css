@@ -31,7 +31,8 @@ body {
 
 main {
   height: 98vh;
-  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center; 
